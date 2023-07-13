@@ -14,10 +14,10 @@ const Popup = ({ isOpen, message, onClose }: PopupProps) => {
     useEffect(() => {
         const closeTimeout = setTimeout(() => {
             setIsClosing(false)
-        }, 5000); // Duración de la animación en milisegundos
+        }, 2000); // Duración de la animación en milisegundos
         const clearModal = setTimeout(() => {
             onClose()
-        }, 7000); // Duración de la animación en milisegundos
+        }, 4500); // Duración de la animación en milisegundos
 
         return () => {
             clearTimeout(closeTimeout);
@@ -28,7 +28,7 @@ const Popup = ({ isOpen, message, onClose }: PopupProps) => {
     return (
         <CSSTransition
             in={isClosing}
-            timeout={4000} // Duración de la animación en milisegundos
+            timeout={3000} // Duración de la animación en milisegundos
             classNames="popup-transition"
             appear={true}
             onExit={() => setIsClosing(false)}

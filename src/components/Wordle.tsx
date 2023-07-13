@@ -1,14 +1,14 @@
-import styles from "./Wordle.module.scss";
 import { useEffect, useState } from "react";
 import { useWindow } from "../hooks/useWindow";
 import { getWordOfTheDay, isValidWord } from "../service/Request";
-import { RowCompleted } from "./RowCompleted";
-import { RowCurrent } from "./RowCurrent";
-import { RowEmpty } from "./RowEmpty";
-import { GameStatus } from "./types";
 import { Keyboard } from "./Keyboard";
 import Modal from "./Modal";
 import Popup from "./PopUp";
+import { RowCompleted } from "./RowCompleted";
+import { RowCurrent } from "./RowCurrent";
+import { RowEmpty } from "./RowEmpty";
+import styles from "./wordle.module.scss";
+import { GameStatus } from "./types";
 
 const keys = [
     "Q",

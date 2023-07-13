@@ -32,7 +32,7 @@
 .popup-transition-appear-active {
     opacity: 1;
     transform: scale(1);
-    transition: opacity 3000ms ease-in, transform 3000ms ease-in;
+    transition: opacity 1000ms ease-in, transform 1000ms ease-in;
 }
 
 /* Estilos de la animación de entrada */
