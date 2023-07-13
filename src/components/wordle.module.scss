@@ -1,0 +1,12 @@
+@import "./variables.scss";
+
+.mainContainer {
+  width: ($size * 5) + ($gap * 5);
+  margin: 20px auto; 
+}
+
+@media screen and (max-width: 600px) {
+    .mainContainer {
+        width: ($size * 3) + ($gap * 3);
+    }
+}

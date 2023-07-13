@@ -1,0 +1,16 @@
+*{
+  box-sizing: border-box;
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1{
+  color: white;
+  font-size: clamp(2rem, 50vw, 3rem);
+}
+
+body{background-color: black;}
