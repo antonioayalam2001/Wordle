@@ -8,7 +8,6 @@ import { RowEmpty } from "./RowEmpty";
 import { GameStatus } from "./types";
 import { Keyboard } from "./Keyboard";
 import Modal from "./Modal";
-import Swal from "sweetalert2";
 import Popup from "./PopUp";
 
 const keys = [
