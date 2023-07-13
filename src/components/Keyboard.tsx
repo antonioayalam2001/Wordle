@@ -4,8 +4,12 @@ interface KeyboardProps {
     onClick: (letter: string) => void
 }
 export function Keyboard({ letters, onClick }: KeyboardProps) {
-    const handleInput = (e: MouseEventHandler<HTMLButtonElement>) => {
-        onClick(e.target.innerText.trim().toUpperCase())
+
+    const handleInput = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+        const buttonText = e.currentTarget.textContent;
+        if (buttonText) {
+            onClick(buttonText.trim());
+        }
     }
 
     return (

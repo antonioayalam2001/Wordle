@@ -5,9 +5,10 @@ function getWords() {
 }
 
 function getNumberOfDay() {
-    const now = new Date(); //new Date('2023-07-12T00:04:16.000Z')
+    const now = new Date().getTime(); //new Date('2023-07-12T00:04:16.000Z')
+    const year = new Date().getFullYear();
     console.log(now);
-    const start = new Date(now.getFullYear(), 0, 0); //new Date('2022-12-31T06:00:00.000Z')
+    const start = new Date(year, 0, 0).getTime(); //new Date('2022-12-31T06:00:00.000Z')
     //Haciendo la resta de las dos fechas, obtenemos la cantidad de milisegundos que hay entre ellas
     const diff = now - start; //16653936358
     const oneDay = 1000 * 60 * 60 * 24; //86400000
